@@ -12,7 +12,7 @@ main {
     gap: 15px;
 }
 
-main section{
+main section , h1{
     background-color: rgb(150, 186, 252);
     padding: 15px;
     border-radius: 10px;
@@ -23,7 +23,29 @@ main section{
     gap: 25px;
 }
 
-main section p span {
+main section hr {
+    height: 3px;
+    background-color: #000;
+}
+
+.comand-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    background-color: #eeee;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.comand-content img {
+    border-radius: 10px;
+}
+
+.comand-content p span {
     background-color: #000;
     color: rgb(150, 186, 252);
     padding: 10px;
@@ -32,13 +54,28 @@ main section p span {
     border-radius: 10px;
 }
 
-main section p {
+
+.comand-content p {
+    padding: 10px;
     font-size: 20px;
     font-weight: bold;
     color: rgb(36, 36, 36);
+    line-height: 40px;
 }
 
-main section hr {
-    height: 3px;
-    background-color: #000;
+@media only screen and (max-width:1000px){
+    .comand-content p span {
+        display: block;
+        width: max-content;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .comand-content p span{
+        font-size: 18px;
+        width: 100%;
+    }
+    .comand-content p{
+        font-size: 18px;
+    }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,83 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Clase de git</title>
 </head>
+
 <body>
-    
-<main>
 
-    <h1>Git</h1>
-    <section>
-        <h2>Configuracion de git</h2>
-        <hr>
-        <p> <span>git config --global user.name "el nombre"</span> </p>
-        <p> <span>git config --global user.email tuemail@gmail.com</span> </p>
-    </section>
+    <main>
 
-    <section>
-        <h2>Iniciando git</h2>
-        <hr>
-        <p> <span>git init</span> - Inicia un repositorio de git en nuestro proyecto, esto <span>SE HACE 1 SOLA VEZ POR PROYECTO</span>.</p>
-        <p> <span> git add . </span> - El . es para guardar todos los archivos que fueron modificados/creados</p>
-        <p> <span> git commit -m "el mensaje del commit"</span> - Mientras mas descriptivo sea el commit mejor es para nosotros.</p>
-        <p><span>git status</span> - Para verificar el estatus de nuestro proyecto, si hay algo para guardar y commitear.</p>
-        <p><span>git log</span> - Muestra el historial de los commits efectuados, con su id, nombre , apellido , email y titulo de commit.</p>
-    </section>
+        <h1>Git - Guia basica para empezar a jugar con sus comandos</h1>
+        <section>
+            <h2>Configuracion de git</h2>
+            <hr>
+            <article class="comand-content">
+                <p> <span>git config --global user.name "el nombre"</span> - Esto es para configurar el nombre de usuario , el nombre que mostrara los commits efectuados por uno.</p>
+                <img src="img/gituser.jpeg" alt="git username">
+            </article>
 
-    <section>
-        <h2>Trabajando con ramas</h2>
-        <hr>
-        <p><span>git branch</span> - Visualizamos las ramas existentes.</p>
-        <p><span>git branch nombrederama</span> - Creamos una nueva rama.</p>
-        <p><span>git checkout nombrederama</span> - Nos movemos hacia esa rama.</p>
-    </section>
-</main>
+            <article class="comand-content">
+                <p> <span>git config --global user.email tuemail@gmail.com</span> - Esto es para configurar el email de usuario , el email que mostrara los commits efectuados por uno. </p>
+                <img src="img/gitemail.jpeg" alt="git useremail">
+            </article>
+        </section>
+
+        <section>
+            <h2>Iniciando git</h2>
+            <hr>
+            <article class="comand-content">
+                <p> <span>git init</span> - Inicia un repositorio de git en nuestro proyecto, esto <span>SE HACE 1 SOLA
+                        VEZ POR PROYECTO.</span>
+                </p>
+                <img src="img/gitinit.jpeg" alt="git init">
+            </article>
+            <article class="comand-content">
+                <p> <span> git add . </span> - El . es para guardar todos los archivos que fueron modificados/creados
+                </p>
+                <img src="img/gitradd.jpeg" alt="git add">
+            </article>
+            <article class="comand-content">
+                <p> <span> git commit -m "el mensaje del commit"</span> - Mientras mas descriptivo sea el commit mejor
+                    es para nosotros.</p>
+                <img src="img/gitcommit.jpeg" alt="git commit">
+            </article>
+            <article class="comand-content">
+                <p><span>git status</span> - Para verificar el estatus de nuestro proyecto, si hay algo para guardar y
+                    commitear.</p>
+                <img src="img/gitstatus.jpeg" alt="git status">
+            </article>
+            <article class="comand-content">
+                <p><span>git log</span> - Muestra el historial de los commits efectuados, con su id, nombre , apellido ,
+                    email y titulo de commit.</p>
+                <img src="img/gitlog.jpeg" alt="git log">
+            </article>
+        </section>
+
+        <section>
+            <h2>Trabajando con ramas</h2>
+            <hr>
+            <article class="comand-content">
+                <p><span>git branch</span> - Visualizamos las ramas existentes.</p>
+                <img src="img/gitbranch.jpeg" alt="git branch">
+            </article>
+
+            <article class="comand-content">
+                <p><span>git branch nombrederama</span> - Creamos una nueva rama.</p>
+                <img src="img/gitnewbranch.jpeg" alt="git nueva rama">
+            </article>
+
+            <article class="comand-content">
+                <p><span>git checkout nombrederama</span> - Nos movemos hacia esa rama.</p>
+                <img src="img/gitcheckout.jpeg" alt="git checkout">
+            </article>
+
+            <article class="comand-content">
+                <p><span>git merge nombrederama</span> - Nos movemos hacia la rama master, pero antes debemos hacer un
+                    commit de los cambios efectuados en esa rama, ya que de lo contrario no surtira efecto.</p>
+                <img src="img/gitmerge.jpeg" alt="git merge">
+            </article>
+
+        </section>
+    </main>
 </body>
+
 </html>
